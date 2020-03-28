@@ -60,7 +60,7 @@ Wire Wire Line
 Wire Wire Line
 	4550 3650 4300 3650
 Wire Bus Line
-	2550 1600 3500 1600
+	2550 1600 2750 1600
 Text Label 3250 1600 0    50   ~ 0
 3.3V
 Text Label 3250 1200 0    50   ~ 0
@@ -103,17 +103,6 @@ F 2 "Capacitor_SMD:C_1206_3216Metric" H 5038 3100 50  0001 C CNN
 F 3 "~https://be.farnell.com/w/c/passive-components/capacitors/ceramic-capacitors/smd-ceramic-multilayer-mlcc-capacitors?capacitance=10uf|100uf&ceramic-capacitor-case=1206-3216-metric-" H 5000 3250 50  0001 C CNN
 	1    5000 3250
 	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x04 JST1
-U 1 1 5E82DEC1
-P 600 1600
-F 0 "JST1" H 518 1175 50  0000 C CNN
-F 1 "Conn_01x04" H 518 1266 50  0000 C CNN
-F 2 "Connector_JST:JST_PH_B4B-PH-K_1x04_P2.00mm_Vertical" H 600 1600 50  0001 C CNN
-F 3 "~" H 600 1600 50  0001 C CNN
-	1    600  1600
-	-1   0    0    1   
 $EndComp
 Text Label 3600 4950 0    50   ~ 0
 GND
@@ -199,7 +188,7 @@ Wire Wire Line
 Wire Wire Line
 	850  1700 850  4950
 Wire Wire Line
-	800  1600 1050 1600
+	800  1600 950  1600
 Wire Wire Line
 	1050 1600 1050 1200
 Wire Wire Line
@@ -210,7 +199,7 @@ Wire Bus Line
 Wire Wire Line
 	1150 1200 5350 1200
 Wire Wire Line
-	2550 1600 3500 1600
+	2550 1600 2750 1600
 Connection ~ 3500 1600
 Wire Bus Line
 	3500 1600 5850 1600
@@ -248,4 +237,45 @@ Wire Wire Line
 	5000 4950 4550 4950
 Wire Bus Line
 	5000 4950 6300 4950
+Wire Wire Line
+	2750 1600 2750 2900
+Connection ~ 2750 1600
+Wire Bus Line
+	2750 1600 3500 1600
+Wire Wire Line
+	2750 1600 3500 1600
+$Comp
+L Connector_Generic:Conn_01x04 JST1
+U 1 1 5E82DEC1
+P 600 1600
+F 0 "JST1" H 518 1175 50  0000 C CNN
+F 1 "Conn_01x04" H 518 1266 50  0000 C CNN
+F 2 "Connector_JST:JST_SH_BM04B-SRSS-TB_1x04-1MP_P1.00mm_Vertical" H 600 1600 50  0001 C CNN
+F 3 "~" H 600 1600 50  0001 C CNN
+	1    600  1600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 JST2
+U 1 1 5E7FDED7
+P 600 1100
+F 0 "JST2" H 518 675 50  0000 C CNN
+F 1 "Conn_01x04" H 518 766 50  0000 C CNN
+F 2 "Connector_JST:JST_SH_BM04B-SRSS-TB_1x04-1MP_P1.00mm_Vertical" H 600 1100 50  0001 C CNN
+F 3 "~" H 600 1100 50  0001 C CNN
+	1    600  1100
+	-1   0    0    1   
+$EndComp
+Connection ~ 950  1600
+Wire Wire Line
+	950  1600 1050 1600
+Wire Wire Line
+	950  1100 800  1100
+Wire Wire Line
+	950  1100 950  1600
+Wire Wire Line
+	800  1200 850  1200
+Wire Wire Line
+	850  1200 850  1700
+Connection ~ 850  1700
 $EndSCHEMATC

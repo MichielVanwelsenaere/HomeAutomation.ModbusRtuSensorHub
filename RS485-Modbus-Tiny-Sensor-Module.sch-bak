@@ -60,7 +60,7 @@ Wire Wire Line
 Wire Wire Line
 	4550 3650 4300 3650
 Wire Bus Line
-	2550 1600 5850 1600
+	2550 1600 2750 1600
 Text Label 3250 1600 0    50   ~ 0
 3.3V
 Text Label 3250 1200 0    50   ~ 0
@@ -92,7 +92,7 @@ Wire Wire Line
 Wire Wire Line
 	5350 3400 5350 4950
 Wire Bus Line
-	850  4950 6300 4950
+	850  4950 1200 4950
 $Comp
 L Device:CP C2
 U 1 1 5E82B616
@@ -110,7 +110,7 @@ U 1 1 5E82DEC1
 P 600 1600
 F 0 "JST1" H 518 1175 50  0000 C CNN
 F 1 "Conn_01x04" H 518 1266 50  0000 C CNN
-F 2 "Connector_JST:JST_PH_B4B-PH-K_1x04_P2.00mm_Vertical" H 600 1600 50  0001 C CNN
+F 2 "Connector_JST:JST_SH_BM04B-SRSS-TB_1x04-1MP_P1.00mm_Vertical" H 600 1600 50  0001 C CNN
 F 3 "~" H 600 1600 50  0001 C CNN
 	1    600  1600
 	-1   0    0    1   
@@ -139,7 +139,7 @@ Wire Wire Line
 Wire Wire Line
 	5350 1200 5350 3100
 Wire Bus Line
-	1050 1200 5850 1200
+	1050 1200 1150 1200
 $Comp
 L LM1117IMP-5.0-NOPB:LM1117IMP-5.0-NOPB LDO1
 U 1 1 5E806535
@@ -202,4 +202,57 @@ Wire Wire Line
 	800  1600 1050 1600
 Wire Wire Line
 	1050 1600 1050 1200
+Wire Wire Line
+	1050 1200 1150 1200
+Connection ~ 1150 1200
+Wire Bus Line
+	1150 1200 5850 1200
+Wire Wire Line
+	1150 1200 5350 1200
+Wire Wire Line
+	2550 1600 2750 1600
+Connection ~ 3500 1600
+Wire Bus Line
+	3500 1600 5850 1600
+Wire Wire Line
+	3500 1600 5000 1600
+Wire Wire Line
+	5350 4950 5000 4950
+Connection ~ 1200 4950
+Wire Bus Line
+	1200 4950 1850 4950
+Wire Wire Line
+	1200 4950 850  4950
+Connection ~ 1850 4950
+Wire Wire Line
+	1850 4950 1200 4950
+Wire Bus Line
+	1850 4950 2750 4950
+Connection ~ 2750 4950
+Wire Wire Line
+	2750 4950 1850 4950
+Wire Bus Line
+	2750 4950 4000 4950
+Connection ~ 4000 4950
+Wire Wire Line
+	4000 4950 2750 4950
+Wire Bus Line
+	4000 4950 4550 4950
+Connection ~ 4550 4950
+Wire Wire Line
+	4550 4950 4000 4950
+Wire Bus Line
+	4550 4950 5000 4950
+Connection ~ 5000 4950
+Wire Wire Line
+	5000 4950 4550 4950
+Wire Bus Line
+	5000 4950 6300 4950
+Wire Wire Line
+	2750 1600 2750 2900
+Connection ~ 2750 1600
+Wire Bus Line
+	2750 1600 3500 1600
+Wire Wire Line
+	2750 1600 3500 1600
 $EndSCHEMATC
