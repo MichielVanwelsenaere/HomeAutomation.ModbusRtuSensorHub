@@ -572,13 +572,13 @@ Text Label 7450 3900 2    50   ~ 0
 PA4
 Text Label 7450 4000 2    50   ~ 0
 PA5
-Text Label 7450 4200 2    50   ~ 0
-PB4
 Text Label 7450 4300 2    50   ~ 0
+PB4
+Text Label 7450 4200 2    50   ~ 0
 PB5
-Text Label 7450 4500 2    50   ~ 0
-PC3
 Text Label 7450 4400 2    50   ~ 0
+PC3
+Text Label 7450 4500 2    50   ~ 0
 PC2
 Text Label 6450 3300 0    50   ~ 0
 GND
