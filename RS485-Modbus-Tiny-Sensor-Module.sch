@@ -14,8 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Wire Wire Line
-	3950 3100 3950 3050
-Wire Wire Line
 	2750 4700 2750 4950
 $Comp
 L Device:LED D1
@@ -58,49 +56,12 @@ F 3 "~https://be.farnell.com/w/c/passive-components/capacitors/ceramic-capacitor
 $EndComp
 Text Label 3600 4950 0    50   ~ 0
 GND
-$Comp
-L Device:R R1
-U 1 1 5E833299
-P 3950 2900
-F 0 "R1" H 4020 2946 50  0000 L CNN
-F 1 "10k" H 4020 2855 50  0000 L CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" V 3880 2900 50  0001 C CNN
-F 3 "https://be.farnell.com/w/c/passive-components/resistors-fixed-value/chip-smd-resistors?resistor-case-style=1206-3216-metric-&resistance=200ohm|10kohm" H 3950 2900 50  0001 C CNN
-	1    3950 2900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1850 2000 1850 4950
 Wire Wire Line
 	5000 1600 5000 3100
-$Comp
-L FSM4JSMA:FSM4JSMA SW1
-U 1 1 5E807E3F
-P 4500 3200
-F 0 "SW1" H 4450 3565 50  0000 C CNN
-F 1 "FSM4JSMA" H 4450 3474 50  0001 C CNN
-F 2 "TE_FSM4JSMA" H 4500 3200 50  0001 L BNN
-F 3 "Compliant" H 4500 3200 50  0001 L BNN
-F 4 "4-1437565-1" H 4500 3200 50  0001 L BNN "Veld4"
-F 5 "50 mA" H 4500 3200 50  0001 L BNN "Veld5"
-F 6 "Single Pole - Single Throw" H 4500 3200 50  0001 L BNN "Veld6"
-F 7 "https://www.te.com/usa-en/product-4-1437565-1.html?te_bu=Cor&te_type=disp&te_campaign=seda_glo_cor-seda-global-disp-prtnr-fy19-seda-model-bom-cta_sma-317_1&elqCampaignId=32493" H 4500 3200 50  0001 L BNN "Veld7"
-F 8 "https://be.farnell.com/alcoswitch-te-connectivity/fsm4jsma/switch-spno-0-05a-24v-smd/dp/3801305?st=switch%20smd" H 4500 3200 50  0001 C CNN "Veld8"
-	1    4500 3200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3950 3100 4050 3100
-Wire Wire Line
-	4100 3300 4050 3300
-Wire Wire Line
-	4050 3300 4050 3100
-Wire Wire Line
-	4050 3100 4100 3100
 Wire Wire Line
 	1200 3350 1200 4950
-Wire Wire Line
-	850  1700 850  4950
 Connection ~ 1200 4950
 Wire Wire Line
 	1200 4950 850  4950
@@ -109,23 +70,23 @@ Wire Wire Line
 	1850 4950 1550 4950
 Connection ~ 2750 4950
 $Comp
-L Connector_Generic:Conn_01x04 JST1
+L Connector_Generic:Conn_01x04 RS485
 U 1 1 5E82DEC1
 P 550 1600
-F 0 "JST1" H 468 1175 50  0000 C CNN
+F 0 "RS485" H 468 1175 50  0000 C CNN
 F 1 "Conn_01x04" H 468 1266 50  0001 C CNN
-F 2 "Connector_JST:JST_SH_BM04B-SRSS-TB_1x04-1MP_P1.00mm_Vertical" H 550 1600 50  0001 C CNN
+F 2 "Connector_JST:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal" H 550 1600 50  0001 C CNN
 F 3 "~" H 550 1600 50  0001 C CNN
 	1    550  1600
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x04 JST2
+L Connector_Generic:Conn_01x04 RS485_2
 U 1 1 5E7FDED7
 P 550 1100
-F 0 "JST2" H 468 675 50  0000 C CNN
+F 0 "RS485_2" H 468 675 50  0000 C CNN
 F 1 "Conn_01x04" H 468 766 50  0001 C CNN
-F 2 "Connector_JST:JST_SH_BM04B-SRSS-TB_1x04-1MP_P1.00mm_Vertical" H 550 1100 50  0001 C CNN
+F 2 "Connector_JST:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal" H 550 1100 50  0001 C CNN
 F 3 "~" H 550 1100 50  0001 C CNN
 	1    550  1100
 	-1   0    0    1   
@@ -134,18 +95,6 @@ Wire Wire Line
 	950  1100 950  1600
 Wire Wire Line
 	850  1200 850  1700
-Connection ~ 850  1700
-$Comp
-L Connector_Generic:Conn_01x06 H1
-U 1 1 5E8091D1
-P 550 4450
-F 0 "H1" H 630 4442 50  0000 L CNN
-F 1 "Conn_01x06" H 630 4351 50  0001 L CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_1x06_P2.00mm_Vertical" H 550 4450 50  0001 C CNN
-F 3 "~" H 550 4450 50  0001 C CNN
-	1    550  4450
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	950  1100 950  750 
 Wire Wire Line
@@ -186,18 +135,14 @@ F 4 "https://be.farnell.com/microchip/mic5504-3-3ym5-tr/ldo-volt-reg-0-3a-3-3v-s
 $EndComp
 Wire Wire Line
 	1450 1600 1450 1200
-Wire Wire Line
-	2750 2900 2750 2300
 Connection ~ 2750 1200
 Wire Wire Line
 	2250 1600 5000 1600
-Wire Wire Line
-	3950 2750 3950 1200
 $Comp
-L Device:R R2
+L Device:R R1
 U 1 1 5E802D67
 P 1950 4350
-F 0 "R2" H 2020 4396 50  0000 L CNN
+F 0 "R1" H 2020 4396 50  0000 L CNN
 F 1 "300" H 2020 4305 50  0000 L CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 1880 4350 50  0001 C CNN
 F 3 "https://be.farnell.com/w/c/passive-components/resistors-fixed-value/chip-smd-resistors?resistor-case-style=1206-3216-metric-&resistance=200ohm|10kohm" H 1950 4350 50  0001 C CNN
@@ -214,16 +159,16 @@ Wire Wire Line
 $Comp
 L Device:C C3
 U 1 1 5E846CC2
-P 5450 3200
-F 0 "C3" H 5568 3246 50  0000 L CNN
-F 1 "100u" H 5568 3155 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 5488 3050 50  0001 C CNN
-F 3 "https://be.farnell.com/w/c/passive-components/capacitors/ceramic-capacitors/smd-ceramic-multilayer-mlcc-capacitors?capacitance=10uf|100uf&ceramic-capacitor-case=1206-3216-metric-" H 5450 3200 50  0001 C CNN
-	1    5450 3200
+P 3850 3200
+F 0 "C3" H 3968 3246 50  0000 L CNN
+F 1 "100u" H 3968 3155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 3888 3050 50  0001 C CNN
+F 3 "https://be.farnell.com/w/c/passive-components/capacitors/ceramic-capacitors/smd-ceramic-multilayer-mlcc-capacitors?capacitance=10uf|100uf&ceramic-capacitor-case=1206-3216-metric-" H 3850 3200 50  0001 C CNN
+	1    3850 3200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5450 3350 5450 4950
+	3850 3350 3850 4950
 $Comp
 L Device:CP C4
 U 1 1 5E84A6AC
@@ -238,21 +183,11 @@ $EndComp
 Wire Wire Line
 	1550 3350 1550 4950
 Connection ~ 5000 4950
-Wire Wire Line
-	5000 4950 5450 4950
 Connection ~ 1550 4950
 Wire Wire Line
 	1550 4950 1200 4950
-Connection ~ 5450 4950
 Wire Wire Line
 	1850 1200 2750 1200
-Wire Wire Line
-	5450 3050 5450 2300
-Wire Wire Line
-	5450 2300 2750 2300
-Connection ~ 2750 2300
-Wire Wire Line
-	2750 2300 2750 1200
 Wire Wire Line
 	1550 3050 1550 1100
 Wire Wire Line
@@ -293,67 +228,28 @@ Text Label 3450 4200 0    50   ~ 0
 TX
 Text Label 3400 4300 0    50   ~ 0
 RX
-Wire Wire Line
-	750  4450 1000 4450
-Wire Wire Line
-	750  4650 1000 4650
-Wire Wire Line
-	750  4250 1000 4250
-Wire Wire Line
-	750  4350 1000 4350
-Text Label 950  4250 0    50   ~ 0
-TX
-Text Label 950  4350 0    50   ~ 0
-RX
-Text Label 950  4450 0    50   ~ 0
-5V
-Text Label 950  4650 0    50   ~ 0
-GND
-Text Label 900  4150 0    50   ~ 0
-DTR
-Wire Wire Line
-	4400 3850 4400 4000
-Text Label 4400 3950 0    50   ~ 0
-DTR
-Wire Wire Line
-	750  4150 950  4150
 $Comp
-L Device:D D2
-U 1 1 5E8886BA
-P 3800 2550
-F 0 "D2" V 3754 2629 50  0000 L CNN
-F 1 "D" V 3845 2629 50  0000 L CNN
-F 2 "Diode_SMD:D_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 3800 2550 50  0001 C CNN
-F 3 "https://be.farnell.com/taiwan-semiconductor/ts4148-rxg/diode-small-signal-75v-0-15a-1206/dp/2708388?st=1206%20diode\\" H 3800 2550 50  0001 C CNN
-	1    3800 2550
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3800 2400 3800 1200
-$Comp
-L Connector_Generic:Conn_01x03 JST3
+L Connector_Generic:Conn_01x03 1-Wire1
 U 1 1 5E813AE2
-P 6800 2600
-F 0 "JST3" H 6880 2642 50  0000 L CNN
-F 1 "Conn_01x03" H 6880 2551 50  0001 L CNN
-F 2 "Connector_JST:JST_SH_BM03B-SRSS-TB_1x03-1MP_P1.00mm_Vertical" H 6800 2600 50  0001 C CNN
-F 3 "~" H 6800 2600 50  0001 C CNN
-	1    6800 2600
+P 6900 2600
+F 0 "1-Wire1" H 6980 2642 50  0000 L CNN
+F 1 "Conn_01x03" H 6980 2551 50  0001 L CNN
+F 2 "Connector_JST:JST_SH_SM03B-SRSS-TB_1x03-1MP_P1.00mm_Horizontal" H 6900 2600 50  0001 C CNN
+F 3 "~" H 6900 2600 50  0001 C CNN
+	1    6900 2600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5450 4950 6400 4950
+	6700 2500 6450 2500
 Wire Wire Line
-	6600 2500 6350 2500
+	6700 2600 6450 2600
 Wire Wire Line
-	6600 2600 6350 2600
-Wire Wire Line
-	6600 2700 6350 2700
-Text Label 6400 2500 0    50   ~ 0
+	6700 2700 6450 2700
+Text Label 6500 2500 0    50   ~ 0
 GND
-Text Label 6400 2600 0    50   ~ 0
+Text Label 6500 2600 0    50   ~ 0
 5V
-Text Label 6400 2700 0    50   ~ 0
+Text Label 6500 2700 0    50   ~ 0
 PA7
 Wire Wire Line
 	3350 3800 3450 3800
@@ -375,8 +271,6 @@ Text Label 750  1400 0    50   ~ 0
 TX
 Text Label 750  1500 0    50   ~ 0
 RX
-Text Notes 6700 2400 0    50   ~ 0
-1-Wire
 Text Label 3350 3200 0    50   ~ 0
 MOSI
 Text Label 3350 3300 0    50   ~ 0
@@ -384,12 +278,12 @@ MISO
 Text Label 3350 3400 0    50   ~ 0
 SCK
 $Comp
-L Connector_Generic:Conn_01x04 JST4
+L Connector_Generic:Conn_01x04 I²C1
 U 1 1 5E82617E
 P 6800 3400
-F 0 "JST4" H 6718 2975 50  0000 C CNN
+F 0 "I²C1" H 6718 2975 50  0000 C CNN
 F 1 "Conn_01x04" H 6718 3066 50  0001 C CNN
-F 2 "Connector_JST:JST_SH_BM04B-SRSS-TB_1x04-1MP_P1.00mm_Vertical" H 6800 3400 50  0001 C CNN
+F 2 "Connector_JST:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal" H 6800 3400 50  0001 C CNN
 F 3 "~" H 6800 3400 50  0001 C CNN
 	1    6800 3400
 	1    0    0    -1  
@@ -408,138 +302,50 @@ Wire Wire Line
 	6600 3400 6450 3400
 Wire Wire Line
 	6600 3300 6450 3300
-Text Notes 6700 3200 0    50   ~ 0
-I²C
-Text Notes 6850 4150 2    50   ~ 0
-SPI
-Wire Wire Line
-	4800 3100 4800 3300
 Text Label 6300 4250 0    50   ~ 0
 GND
-Text Label 6300 4350 0    50   ~ 0
-5V
-Text Label 6300 4450 0    50   ~ 0
-MOSI
 Text Label 6300 4550 0    50   ~ 0
-MISO
+MOSI
 Text Label 6300 4650 0    50   ~ 0
+MISO
+Text Label 6300 4750 0    50   ~ 0
 SCK
-$Comp
-L Connector_Generic:Conn_01x05 JST5
-U 1 1 5E820C17
-P 6750 4450
-F 0 "JST5" H 6830 4446 50  0000 L CNN
-F 1 "Conn_01x05" H 6830 4401 50  0001 L CNN
-F 2 "Connector_JST:JST_SH_BM05B-SRSS-TB_1x05-1MP_P1.00mm_Vertical" H 6750 4450 50  0001 C CNN
-F 3 "~" H 6750 4450 50  0001 C CNN
-	1    6750 4450
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6550 4250 6300 4250
 Wire Wire Line
-	6550 4350 6300 4350
-Wire Wire Line
-	6550 4450 6300 4450
-Wire Wire Line
 	6550 4550 6300 4550
 Wire Wire Line
-	6300 4650 6550 4650
+	6550 4650 6300 4650
+Wire Wire Line
+	6300 4750 6550 4750
 Text Label 3350 4000 0    50   ~ 0
 SCL
 Text Label 3350 4100 0    50   ~ 0
 SDA
-Connection ~ 4800 3300
 Wire Wire Line
-	4800 3300 4800 4950
-Connection ~ 4800 4950
+	3350 3100 3550 3100
+Text Label 6700 1900 2    50   ~ 0
+GND
+Text Label 6700 2000 2    50   ~ 0
+5V
 Wire Wire Line
-	4800 4950 5000 4950
-Wire Wire Line
-	2750 4950 4800 4950
-Connection ~ 4050 3100
-Connection ~ 3950 1200
-Wire Wire Line
-	3950 1200 6300 1200
-Connection ~ 3800 1200
-Wire Wire Line
-	3800 1200 3950 1200
-Wire Wire Line
-	2750 1200 3800 1200
-Wire Wire Line
-	3800 2700 3800 3100
-Wire Wire Line
-	3800 3100 3900 3100
-Connection ~ 3950 3100
-Wire Wire Line
-	3900 3550 3900 3100
-Connection ~ 3900 3100
-Wire Wire Line
-	3900 3100 3950 3100
-Wire Wire Line
-	4400 3550 3900 3550
+	6700 2100 6500 2100
 $Comp
-L Device:C C5
-U 1 1 5E881453
-P 4400 3700
-F 0 "C5" H 4518 3746 50  0000 L CNN
-F 1 "1u" H 4518 3655 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 4438 3550 50  0001 C CNN
-F 3 "~https://be.farnell.com/w/c/passive-components/capacitors/ceramic-capacitors/smd-ceramic-multilayer-mlcc-capacitors?capacitance=10uf|100uf&ceramic-capacitor-case=1206-3216-metric-" H 4400 3700 50  0001 C CNN
-	1    4400 3700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Jumper JP1
-U 1 1 5E88E070
-P 3900 3850
-F 0 "JP1" H 3900 4114 50  0000 C CNN
-F 1 "Jumper" H 3900 4023 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 3900 3850 50  0001 C CNN
-F 3 "~" H 3900 3850 50  0001 C CNN
-	1    3900 3850
+L Device:R R2
+U 1 1 5E8B00DD
+P 6350 2100
+F 0 "R2" H 6420 2146 50  0000 L CNN
+F 1 "4.7k" H 6420 2055 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 6280 2100 50  0001 C CNN
+F 3 "https://be.farnell.com/w/c/passive-components/resistors-fixed-value/chip-smd-resistors?resistor-case-style=1206-3216-metric-&resistance=200ohm|10kohm" H 6350 2100 50  0001 C CNN
+	1    6350 2100
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	3350 3100 3550 3100
-$Comp
-L Connector_Generic:Conn_01x03 H2
-U 1 1 5E8A6A91
-P 600 5250
-F 0 "H2" H 680 5292 50  0000 L CNN
-F 1 "Conn_01x03" H 680 5201 50  0001 L CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_1x03_P2.00mm_Vertical" H 600 5250 50  0001 C CNN
-F 3 "~" H 600 5250 50  0001 C CNN
-	1    600  5250
-	-1   0    0    1   
-$EndComp
-Text Label 800  5350 0    50   ~ 0
-GND
-Text Label 800  5250 0    50   ~ 0
-5V
-Wire Wire Line
-	800  5150 1000 5150
-$Comp
-L Device:R R3
-U 1 1 5E8B00DD
-P 1150 5150
-F 0 "R3" H 1220 5196 50  0000 L CNN
-F 1 "4.7k" H 1220 5105 50  0000 L CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" V 1080 5150 50  0001 C CNN
-F 3 "https://be.farnell.com/w/c/passive-components/resistors-fixed-value/chip-smd-resistors?resistor-case-style=1206-3216-metric-&resistance=200ohm|10kohm" H 1150 5150 50  0001 C CNN
-	1    1150 5150
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	1300 5150 1500 5150
+	6200 2100 6000 2100
 Text Label 3550 3100 0    50   ~ 0
 RST
-Connection ~ 3900 3550
-Text Label 1400 5150 0    50   ~ 0
-RST
-Wire Wire Line
-	3900 4150 3900 4300
-Text Label 3900 4300 0    50   ~ 0
+Text Label 6100 2100 2    50   ~ 0
 RST
 Text Label 3350 3500 0    50   ~ 0
 PA4
@@ -556,19 +362,19 @@ PC2
 Text Label 2150 4300 2    50   ~ 0
 PC3
 $Comp
-L Connector_Generic:Conn_01x10 H3
+L Connector_Generic:Conn_01x10 H1
 U 1 1 5E8C07F9
 P 7650 4000
-F 0 "H3" H 7730 3946 50  0000 L CNN
+F 0 "H1" H 7730 3946 50  0000 L CNN
 F 1 "Conn_01x10" H 7730 3901 50  0001 L CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_1x10_P2.00mm_Vertical" H 7650 4000 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical" H 7650 4000 50  0001 C CNN
 F 3 "~" H 7650 4000 50  0001 C CNN
 	1    7650 4000
 	1    0    0    -1  
 $EndComp
-Text Label 7450 4100 2    50   ~ 0
-PA6
 Text Label 7450 3900 2    50   ~ 0
+PA6
+Text Label 7450 4100 2    50   ~ 0
 PA4
 Text Label 7450 4000 2    50   ~ 0
 PA5
@@ -584,10 +390,57 @@ Text Label 6450 3300 0    50   ~ 0
 GND
 Text Label 7450 3600 2    50   ~ 0
 GND
-Text Label 7450 3700 2    50   ~ 0
+Connection ~ 850  1700
+Wire Wire Line
+	850  1700 850  4950
+Wire Wire Line
+	2750 1200 3850 1200
+Wire Wire Line
+	2750 1200 2750 2900
+Wire Wire Line
+	3850 1200 3850 3050
+Wire Wire Line
+	2750 4950 3850 4950
+Connection ~ 3850 1200
+Connection ~ 3850 4950
+Wire Wire Line
+	3850 4950 5000 4950
+Wire Wire Line
+	5000 4950 6400 4950
+Wire Wire Line
+	3850 1200 6300 1200
+Text Label 6300 4450 0    50   ~ 0
+3.3V
+$Comp
+L Connector_Generic:Conn_01x06 SPI1
+U 1 1 5E820C17
+P 6750 4450
+F 0 "SPI1" H 6830 4446 50  0000 L CNN
+F 1 "Conn_01x06" H 6830 4401 50  0001 L CNN
+F 2 "Connector_JST:JST_SH_SM06B-SRSS-TB_1x06-1MP_P1.00mm_Horizontal" H 6750 4450 50  0001 C CNN
+F 3 "~" H 6750 4450 50  0001 C CNN
+	1    6750 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 4350 6300 4350
+Text Label 6300 4350 0    50   ~ 0
 5V
+Wire Wire Line
+	6300 4450 6550 4450
 Text Label 7450 3800 2    50   ~ 0
 3.3V
-Text Label 850  5150 0    50   ~ 0
-UPDI
+Text Label 7450 3700 2    50   ~ 0
+5V
+$Comp
+L Connector_Generic:Conn_01x03 UPDI1
+U 1 1 5E9F854C
+P 6900 2000
+F 0 "UPDI1" H 6980 2042 50  0000 L CNN
+F 1 "Conn_01x03" H 6980 1951 50  0001 L CNN
+F 2 "Connector_JST:JST_SH_SM03B-SRSS-TB_1x03-1MP_P1.00mm_Horizontal" H 6900 2000 50  0001 C CNN
+F 3 "~" H 6900 2000 50  0001 C CNN
+	1    6900 2000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

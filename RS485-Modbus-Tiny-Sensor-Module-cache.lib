@@ -45,31 +45,6 @@ X Pin_4 4 -200 -200 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Connector_Generic_Conn_01x05
-#
-DEF Connector_Generic_Conn_01x05 J 0 40 Y N 1 F N
-F0 "J" 0 300 50 H V C CNN
-F1 "Connector_Generic_Conn_01x05" 0 -300 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- Connector*:*_1x??_*
-$ENDFPLIST
-DRAW
-S -50 -195 0 -205 1 1 6 N
-S -50 -95 0 -105 1 1 6 N
-S -50 5 0 -5 1 1 6 N
-S -50 105 0 95 1 1 6 N
-S -50 205 0 195 1 1 6 N
-S -50 250 50 -250 1 1 10 f
-X Pin_1 1 -200 200 150 R 50 50 1 1 P
-X Pin_2 2 -200 100 150 R 50 50 1 1 P
-X Pin_3 3 -200 0 150 R 50 50 1 1 P
-X Pin_4 4 -200 -100 150 R 50 50 1 1 P
-X Pin_5 5 -200 -200 150 R 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
 # Connector_Generic_Conn_01x06
 #
 DEF Connector_Generic_Conn_01x06 J 0 40 Y N 1 F N
@@ -170,47 +145,6 @@ X ~ 2 0 -150 110 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device_D
-#
-DEF Device_D D 0 40 N N 1 F N
-F0 "D" 0 100 50 H V C CNN
-F1 "Device_D" 0 -100 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- TO-???*
- *_Diode_*
- *SingleDiode*
- D_*
-$ENDFPLIST
-DRAW
-P 2 0 1 8 -50 50 -50 -50 N
-P 2 0 1 0 50 0 -50 0 N
-P 4 0 1 8 50 50 50 -50 -50 0 50 50 N
-X K 1 -150 0 100 R 50 50 1 1 P
-X A 2 150 0 100 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Device_Jumper
-#
-DEF Device_Jumper JP 0 30 Y N 1 F N
-F0 "JP" 0 150 50 H V C CNN
-F1 "Device_Jumper" 0 -80 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- SolderJumper*
-$ENDFPLIST
-DRAW
-A 0 -26 125 1426 373 0 1 0 N -98 50 99 50
-C -100 0 35 0 1 0 N
-C 100 0 35 0 1 0 N
-X 1 1 -300 0 165 R 50 50 0 1 P
-X 2 2 300 0 165 L 50 50 0 1 P
-ENDDRAW
-ENDDEF
-#
 # Device_LED
 #
 DEF Device_LED D 0 40 N N 1 F N
@@ -248,38 +182,6 @@ DRAW
 S -40 -100 40 100 0 1 10 N
 X ~ 1 0 150 50 D 50 50 1 1 P
 X ~ 2 0 -150 50 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# FSM4JSMA_FSM4JSMA
-#
-DEF FSM4JSMA_FSM4JSMA SW 0 40 Y N 1 L N
-F0 "SW" -301 220 50 H V L BNN
-F1 "FSM4JSMA_FSM4JSMA" -301 -291 50 H V L BNN
-F2 "TE_FSM4JSMA" 0 0 50 H I L BNN
-F3 "Compliant" 0 0 50 H I L BNN
-F4 "4-1437565-1" 0 0 50 H I L BNN
-F5 "50 mA" 0 0 50 H I L BNN
-F6 "Single Pole - Single Throw" 0 0 50 H I L BNN
-F7 "https://www.te.com/usa-en/product-4-1437565-1.html?te_bu=Cor&te_type=disp&te_campaign=seda_glo_cor-seda-global-disp-prtnr-fy19-seda-model-bom-cta_sma-317_1&elqCampaignId=32493" 0 0 50 H I L BNN
-DRAW
-C -100 0 10 0 0 20 N
-C 0 0 10 0 0 20 N
-P 2 0 0 6 -300 -200 -300 200 N
-P 2 0 0 6 -300 200 200 200 N
-P 2 0 0 6 -200 0 -200 -100 N
-P 2 0 0 6 -200 0 -200 100 N
-P 2 0 0 6 -102 0 -200 0 N
-P 2 0 0 6 -102 0 -5 42 N
-P 2 0 0 6 -5 0 100 0 N
-P 2 0 0 6 100 0 100 -100 N
-P 2 0 0 6 100 100 100 0 N
-P 2 0 0 6 200 -200 -300 -200 N
-P 2 0 0 6 200 200 200 -200 N
-X 1 1 -400 100 200 R 40 40 0 0 P
-X 2 2 -400 -100 200 R 40 40 0 0 P
-X 3 3 300 100 200 L 40 40 0 0 P
-X 4 4 300 -100 200 L 40 40 0 0 P
 ENDDRAW
 ENDDEF
 #
