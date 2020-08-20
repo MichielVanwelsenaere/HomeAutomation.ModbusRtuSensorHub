@@ -15,11 +15,12 @@ PCB Front                   | PCB Back
 
 ## Details & Capabilities 
 
-measurements: ca 32mm x 30.5mm
+details:
+- measurements: ca 32mm x 30.5mm
+- microprocessor: ATTINY3216
 
 Capabilities:
 
-- ATTINY3216 microprocessor
 - wide range of allowed power supply voltage: 7-30V
 - onboard convertor for 3.3V power supply (300mA max)
 - onboard convertor for 5V power supply (1.5A max, board power consumption not included)
@@ -33,3 +34,13 @@ Capabilities:
 
 
 # Getting started
+
+- [Required Soldering Materials]()
+- [BOM (Bill Of Materials)]()
+- [Ordering the PCB's]()
+- [Soldering the PCB's]()
+- [Building a FTDI programmer]()
+- [Loading the bootloader]()
+- [Programming]()
+
+# Example projects
