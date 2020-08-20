@@ -41,15 +41,15 @@ Internal clock at up to 20MHz at 5v, up to 10MHz at 3.3v
 - X digital pins
 - X analogs pins 
 
+TODO: add board pinout here
 
 # Getting started
 
-- [Required Soldering Materials]()
-- [BOM (Bill Of Materials)]()
-- [Ordering the PCB's]()
-- [Soldering the PCB's]()
-- [Building a FTDI programmer]()
-- [Loading the bootloader]()
+- [Required Soldering Materials](./docs/Required-Soldering-Materials.md)
+- [BOM (Bill Of Materials)](./docs/BOM.md)
+- [Ordering the PCBs](./docs/Ordering-the-PCBs.md)
+- [Soldering the PCBs](./docs/Soldering-the-PCBs.md)
+- [Building a FTDI programmer & loading the bootloader](https://www.electronics-lab.com/project/getting-started-with-the-new-attiny-chips-programming-the-microchips-0-series-and-1-series-attiny-with-the-arduino-ide/)
 - [Programming]()
 
 # Example projects
