@@ -8,7 +8,7 @@ This PCB with limited footprint is designed to provide a robust and versitale se
 # PCB
 
 ## General
-PCB measurements: ca 32mm x 30.5mm x 11m
+PCB measurements: ca 32mm x 30.5mm x 11mm
 
 PCB Front                   | PCB Back
 :--------------------------:|:-------------------------:
