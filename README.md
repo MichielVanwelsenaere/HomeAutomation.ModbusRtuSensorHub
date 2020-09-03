@@ -33,13 +33,13 @@ Internal clock at up to 20MHz at 5v, up to 10MHz at 3.3v
 - wide range of allowed power supply voltage: 7-30V
 - onboard convertor for 3.3V power supply (300mA max)
 - onboard convertor for 5V power supply (1.5A max, board power consumption not included)
-- dedicated RS485 connector
+- two dedicated RS485 connector for leveraging Modbus RTU (bus in and out)
 - dedicated 1-Wire connector
-- dedicated UDPI connector
+- dedicated UDPI connector for programming the board
 - dedicated SPI connector
 - dedicated I²C connector
-- X digital pins
-- X analogs pins 
+- 2 remaining digital pins
+- 5 remaining digital/analog pins
 
 ![FeatherDiagram](./docs/_img/FeatherDiagram.png)
 
