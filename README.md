@@ -41,7 +41,7 @@ Internal clock at up to 20MHz at 5v, up to 10MHz at 3.3v
 - X digital pins
 - X analogs pins 
 
-TODO: add board pinout here
+![FeatherDiagram](./docs/_img/FeatherDiagram.png)
 
 # Getting started
 
