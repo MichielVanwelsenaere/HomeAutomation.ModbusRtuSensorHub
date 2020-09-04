@@ -35,7 +35,7 @@ Internal clock at up to 20MHz at 5v, up to 10MHz at 3.3v
 - onboard convertor for 5V power supply (1.5A max, board power consumption not included)
 - two dedicated RS485 connector for leveraging Modbus RTU (bus in and out)
 - dedicated 1-Wire connector
-- dedicated UDPI connector for programming the board
+- dedicated UPDI connector for programming the board
 - dedicated SPI connector
 - dedicated I²C connector
 - 2 remaining digital pins
