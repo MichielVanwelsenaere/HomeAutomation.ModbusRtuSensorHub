@@ -49,7 +49,7 @@ Internal clock at up to 20MHz at 5v, up to 10MHz at 3.3v
 - [BOM (Bill Of Materials)](./docs/BOM.md)
 - [Ordering the PCBs](./docs/Ordering-the-PCBs.md)
 - [Soldering the PCBs](./docs/Soldering-the-PCBs.md)
-- [Building an UDPI programmer](https://www.electronics-lab.com/project/getting-started-with-the-new-attiny-chips-programming-the-microchips-0-series-and-1-series-attiny-with-the-arduino-ide/)
+- [Building an UPDI programmer](https://www.electronics-lab.com/project/getting-started-with-the-new-attiny-chips-programming-the-microchips-0-series-and-1-series-attiny-with-the-arduino-ide/)
 - [Programming]()
 
 # Example projects
