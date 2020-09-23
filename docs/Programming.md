@@ -5,6 +5,8 @@ Wire up the board to the UPDI programmer as shown below:
 
 ![Arduino IDE Tools Settings](./_img/Arduino_Programming_Wire_Diagram.png)
 
+When doing so, please disconnect any other powersupply to the board.
+
 ### Arduino IDE Preferences
 
 1. (In the Arduino IDE) File > Preferences
