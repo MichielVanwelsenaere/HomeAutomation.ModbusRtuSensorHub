@@ -1,10 +1,3 @@
-/*
-  Blink
-
-  Turns on the onboard LED on for one second, then off for one second, repeatedly.
-
-*/
-
 // the setup function runs once when you press reset or power the board
 void setup() {
   // initialize digital pin LED_BUILTIN as an output.
