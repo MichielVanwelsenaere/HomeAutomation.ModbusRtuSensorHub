@@ -8,6 +8,6 @@ None, leverages the onboard LED.
 
 ## Sketch
 
-[Link to Sketch](.\Blink.ino)
+[Link to Sketch](./Blink.ino)
 
 

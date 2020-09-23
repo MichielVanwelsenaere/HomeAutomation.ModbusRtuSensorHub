@@ -8,6 +8,6 @@ None.
 
 ## Sketch
 
-[Link to Sketch](.\BlinkAll.ino)
+[Link to Sketch](./BlinkAll.ino)
 
 
