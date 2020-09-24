@@ -14,10 +14,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-      - uses: actions/checkout@v2
+        uses: actions/checkout@v2
 
       - name: Verify if there are no broken links in the docs
-      - uses: gaurav-nelson/github-action-markdown-link-check@1.0.2
+        uses: gaurav-nelson/github-action-markdown-link-check@1.0.2
         with:        
           use-verbose-mode: 'yes'
 
