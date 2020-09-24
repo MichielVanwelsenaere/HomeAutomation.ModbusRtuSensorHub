@@ -1,12 +1,7 @@
 name: Pull Request
 
-# on:
-#   pull_request:
 on:
-  push:
-    # branches to consider in the event; optional, defaults to all
-    branches:
-      - master
+  pull_request:
 
 jobs:
   docs_check:
