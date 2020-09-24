@@ -1,4 +1,7 @@
 # Modbus RTU Sensor Hub
+
+[![Join the chat at https://gitter.im/HomeAutomation-ModbusRtuSensorHub/community](https://badges.gitter.im/HomeAutomation-ModbusRtuSensorHub/community.svg)](https://gitter.im/HomeAutomation-ModbusRtuSensorHub/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 <a href="https://github.com/MichielVanwelsenaere/HomeAutomation.ModbusRtuSensorHub/releases" rel="nofollow"><img src="https://img.shields.io/github/release/MichielVanwelsenaere/HomeAutomation.ModbusRtuSensorHub.svg" alt="Releases"></a>
 <a href="https://gitter.im/MichielVanwelsenaere/HomeAutomation.ModbusRtuSensorHub" rel="nofollow"><img src="https://img.shields.io/gitter/room/HomeAutomation-ModbusRtuSensorHub/community" alt="Gitter" ></a>
 <a href="./LICENSE" rel="nofollow"><img src="https://img.shields.io/github/license/MichielVanwelsenaere/HomeAutomation.ModbusRtuSensorHub.svg" alt="License"></a>
