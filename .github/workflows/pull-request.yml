@@ -28,11 +28,8 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
 
-    - name: Compile all examples
+    - name: Compile all Arduino samples for the ATtiny3216
       uses: ArminJo/arduino-test-compile@v2
-      # with:
-      #   arduino-board-fqbn: esp8266:esp8266:huzzah:eesz=4M3M,xtal=80
-      #   platform-url: https://arduino.esp8266.com/stable/package_esp8266com_index.json
-      #   required-libraries: Servo,Adafruit NeoPixel
-      #   sketches-exclude: WhistleSwitch 50Hz
-      #   build-properties: '{ "WhistleSwitch": "-DDEBUG -DFREQUENCY_RANGE_LOW", "SimpleFrequencyDetector": "-DINFO" }'
+      with:
+        arduino-board-fqbn: megaTinyCore:megaavr:atxy6:chip=3216,clock=20,bodvoltage=4v2,bodmodeactive=disabled,bodmodesleep=disabled,eesave=enable,millis=enabled,uartvoltage=5v
+        platform-url: http://drazzy.com/package_drazzy.com_index.json
