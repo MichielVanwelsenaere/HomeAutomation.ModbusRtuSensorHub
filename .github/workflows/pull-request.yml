@@ -23,7 +23,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
 
-    - name: Compile all Arduino samples for the ATtiny3216
+    - name: Compile all Arduino example applications for the ATtiny3216 chip
       uses: ArminJo/arduino-test-compile@v2
       with:
         arduino-board-fqbn: megaTinyCore:megaavr:atxy6:chip=3216,clock=20,bodvoltage=4v2,bodmodeactive=disabled,bodmodesleep=disabled,eesave=enable,millis=enabled,uartvoltage=5v

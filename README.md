@@ -2,6 +2,12 @@
 <a href="https://github.com/MichielVanwelsenaere/HomeAutomation.ModbusRtuSensorHub/releases" rel="nofollow"><img src="https://img.shields.io/github/release/MichielVanwelsenaere/HomeAutomation.ModbusRtuSensorHub.svg" alt="Releases"></a>
 <a href="./LICENSE" rel="nofollow"><img src="https://img.shields.io/github/license/MichielVanwelsenaere/HomeAutomation.ModbusRtuSensorHub.svg" alt="License"></a>
 
+----------------------------
+
+:rotating_light: This project is not yet in V1.0 state and is to be considered a work in progress. A release will be created when everything is working as expected.
+
+----------------------------
+
 This PCB with limited footprint is designed to provide a robust and versitale sensor hub using Modbus RTU over RS485. 
 
 # PCB
@@ -55,3 +61,4 @@ Internal clock at up to 20MHz at 5v, up to 10MHz at 3.3v
 
 - [Blink](./docs/Example-projects/Blink/Blink.md)
 - [BlinkAll](./docs/Example-projects/BlinkAll/BlinkAll.md)
+- [ModbusRTU StaticValue](./docs/Example-projects/ModbusRTU_StaticValue/ModbusRTU_StaticValue.md)
