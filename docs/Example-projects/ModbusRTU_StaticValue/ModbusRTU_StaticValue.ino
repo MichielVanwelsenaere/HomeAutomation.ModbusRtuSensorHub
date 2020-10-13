@@ -1,7 +1,7 @@
 #include <ModbusRtu.h>
 
 #ifndef PIN_HWSERIAL0_XDIR 
-#define PIN_HWSERIAL0_XDIR PIN_PA4
+#define PIN_HWSERIAL0_XDIR PIN_PC2
 #endif
 
 
@@ -9,7 +9,7 @@
 #define BAUDRATE 9600 // ModBus Slave baudrate.
  
 // Modbus register data array (start register = 0)
-uint16_t au16data[16] = {3, 14, 9265, 4, 2, 7182, 28182, 8, 0, 0, 0, 0, 0, 0, 1, 28}; // 16 registers
+uint16_t au16data[16] = {4, 14, 9265, 4, 2, 7182, 28182, 8, 0, 0, 0, 0, 0, 0, 1, 28}; // 16 registers
  
 /**
  *  Modbus object declaration
