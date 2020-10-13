@@ -27,12 +27,12 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
     
-    - name: Checkout custom library ModbusRTU
-      uses: actions/checkout@v2
-      with:
-        repository: smarmengol/Modbus-Master-Slave-for-Arduino 
-        ref: master
-        path: CustomLibrary_ModbusRtu # must contain string "Custom"
+    # - name: Checkout custom library ModbusRTU
+    #   uses: actions/checkout@v2
+    #   with:
+    #     repository: smarmengol/Modbus-Master-Slave-for-Arduino
+    #     ref: master
+    #     path: CustomLibrary_ModbusRtu # must contain string "Custom"
 
     - name: Compile all Arduino example applications for the ATtiny3216 chip
       uses: ArminJo/arduino-test-compile@v2
