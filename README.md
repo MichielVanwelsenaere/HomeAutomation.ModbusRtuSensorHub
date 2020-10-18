@@ -44,7 +44,7 @@ Internal clock at up to 20MHz at 5v, up to 10MHz at 3.3v
 - dedicated SPI connector
 - dedicated I²C connector
 - 2 remaining digital pins
-- 5 remaining digital/analog pins
+- 4 remaining digital/analog pins
 
 ![FeatherDiagram](./docs/_img/FeatherDiagram.png)
 
