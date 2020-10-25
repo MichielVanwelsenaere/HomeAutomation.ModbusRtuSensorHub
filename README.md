@@ -62,3 +62,4 @@ Internal clock at up to 20MHz at 5v, up to 10MHz at 3.3v
 - [Blink](./docs/Example-projects/Blink/Blink.md)
 - [BlinkAll](./docs/Example-projects/BlinkAll/BlinkAll.md)
 - [ModbusRTU StaticValue](./docs/Example-projects/ModbusRTU_StaticValue/ModbusRTU_StaticValue.md)
+- [ModbusRTU DS18B20](./docs/Example-projects/ModbusRTU_DS18B20/ModbusRTU_DS18B20.md)
