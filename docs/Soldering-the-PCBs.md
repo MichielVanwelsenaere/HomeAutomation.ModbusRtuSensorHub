@@ -1,23 +1,14 @@
 ## Soldering the PCBs
-Lerage the approach, tips & advice below to solder the board(s).
+Leverage the approach, tips & advice below to solder the board(s) together with the [BOM](./BOM).
 
 ### Soldering Order
 
-For the front side of the board solder the components in the following order:
-1. RS485 JST connector
-1. ATTINY3216 Microcontroller
-1. Remaining JST connectors
-1. R1
-1. D1
-1. C4
-1. R2
-1. C2
-1. Headers
+On the front side of the board, solder the components in the following order:
 
-For the back side of the board solder the components in the following order:
-1. LDO2
-1. LDO1
-1. C1
-1. C2
-1. RS485 JST connector
+![PCB Soldering Front](./_img/PCB_3D_Front_Soldering.png)
 
+On the back side of the board, solder the components in the following order:
+
+![PCB Soldering Back](./_img/PCB_3D_Back_Soldering.png)
+
+Note: this soldering order is a result of personal experience. Naturally you can solder the board in any order you see fit.
