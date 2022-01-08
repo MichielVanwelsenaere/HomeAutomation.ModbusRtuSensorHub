@@ -388,46 +388,19 @@ U 1 1 5E82DEC1
 P 9150 1350
 F 0 "RS485" H 9068 925 50  0000 C CNN
 F 1 "Conn_01x04" H 9068 1016 50  0001 C CNN
-F 2 "Connector_JST:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal" H 9150 1350 50  0001 C CNN
+F 2 "Connector_JST:JST_XH_S4B-XH-A-1_1x04_P2.50mm_Horizontal" H 9150 1350 50  0001 C CNN
 F 3 "~" H 9150 1350 50  0001 C CNN
 	1    9150 1350
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector_Generic:Conn_01x04 RS485_2
-U 1 1 5E7FDED7
-P 9100 2100
-F 0 "RS485_2" H 9018 1675 50  0000 C CNN
-F 1 "Conn_01x04" H 9018 1766 50  0001 C CNN
-F 2 "Connector_JST:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal" H 9100 2100 50  0001 C CNN
-F 3 "~" H 9100 2100 50  0001 C CNN
-	1    9100 2100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8900 2000 8750 2000
-Wire Wire Line
-	8900 2100 8750 2100
-Wire Wire Line
-	8750 2200 8900 2200
-Wire Wire Line
-	8900 2300 8750 2300
 Text Label 8800 1250 0    50   ~ 0
 GND
-Text Label 8750 2000 0    50   ~ 0
-GND
 Text Label 8800 1550 0    50   ~ 0
-24V
-Text Label 8750 2300 0    50   ~ 0
 24V
 Text Label 8800 1350 0    50   ~ 0
 A
 Text Label 8800 1450 0    50   ~ 0
 B
-Text Label 8750 2200 0    50   ~ 0
-B
-Text Label 8750 2100 0    50   ~ 0
-A
 Wire Wire Line
 	5850 3000 5750 3000
 Text Label 5750 3000 2    50   ~ 0
@@ -566,4 +539,5 @@ Text Label 7050 1600 0    50   ~ 0
 TX
 Text Label 7400 1600 0    50   ~ 0
 RX
+NoConn ~ 9150 1300
 $EndSCHEMATC
